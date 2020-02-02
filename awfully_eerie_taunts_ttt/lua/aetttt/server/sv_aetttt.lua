@@ -1,5 +1,5 @@
 --path for taunts inside the sound folder
-local path = "taunt/ttt/"
+local path = "aet/ttt/"
 
 --get all sound files
 local taunt_files = file.Find("sound/" .. path .. "*.wav", "GAME")
@@ -43,8 +43,8 @@ local function RegisterTaunts()
         end
 
         --register taunt
-        TAUNT.RegisterTaunt(taunt)
+        AET.RegisterTaunt(taunt)
     end
 end
 
-hook.Add("TAUNT_RegisterTaunts", "TAUNT_RegisterTTTTaunts", RegisterTaunts)
+hook.Add("AET_RegisterTaunts", "AET_RegisterAETTTT", RegisterTaunts)
